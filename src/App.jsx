@@ -5,6 +5,7 @@ import PlaygroundPage from "./pages/PlaygroundPage/PlaygroundPage";
 import CapybaraPage from "./pages/CapybaraPage/CapybaraPage";
 import PlanePage from "./pages/PlanePage/PlanePage";
 import WavyPlane from "./pages/WavyPage/WavyPage";
+import CarPage from "./pages/CarPage/CarPage";
 
 export default function App() {
   return (
@@ -19,7 +20,6 @@ export default function App() {
         <Link to="/plane" style={{ margin: "0 10px", color: "#fff" }}>
           Plane
         </Link>
-
         <Link to="/wavy" style={{ margin: "0 10px", color: "#fff" }}>
           WavyPlane
         </Link>
@@ -28,6 +28,9 @@ export default function App() {
         </Link>
         <Link to="/capybara" style={{ margin: "0 10px", color: "#fff" }}>
           Capybara
+        </Link>
+        <Link to="/car" style={{ margin: "0 10px", color: "#fff" }}>
+          Car
         </Link>
       </nav>
 
@@ -38,6 +41,7 @@ export default function App() {
         <Route path="/wavy" element={<WavyPlane />} />
         <Route path="/playground" element={<PlaygroundPage />} />
         <Route path="/capybara" element={<CapybaraPage />} />
+        <Route path="/car" element={<CarPage />} />
         <Route path="*" element={<CubePage />} />
       </Routes>
     </Router>
